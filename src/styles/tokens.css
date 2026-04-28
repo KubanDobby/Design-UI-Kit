@@ -1,0 +1,31 @@
+/**
+ * Game UI Kit design tokens.
+ * Экспортируются в Tailwind v4 через @theme — используются как `bg-game-green`,
+ * `rounded-game-card`, `shadow-game-card`, etc.
+ */
+@theme {
+  --color-game-green: #71c638;
+  --color-game-green-top: #b5ff84;
+  --color-game-green-bottom: #46881b;
+  --color-game-orange: #ee9448;
+  --color-game-orange-top: #ffc89a;
+  --color-game-orange-bottom: #a85f1f;
+  --color-game-yellow: #fdc25b;
+  --color-game-yellow-bottom: #ee9448;
+  --color-game-brown: #94633a;
+  --color-game-text: #3c415c;
+  --color-game-border-dark: #263f2a;
+  --color-game-border-red: #4a1c25;
+  --color-game-icon: #3b2f2a;
+  --color-game-bg: #d1d1d1;
+
+  --radius-game: 8px;
+  --radius-game-card: 24px;
+
+  --shadow-game-btn-green: inset 0 2px 0 0 #b5ff84, inset 0 -4px 0 0 #46881b;
+  --shadow-game-btn-green-pressed: inset 0 1px 0 0 #46881b, inset 0 -1px 0 0 #46881b;
+  --shadow-game-btn-orange: inset 0 4px 0 0 #ffc89a, inset 0 -4px 0 0 #a85f1f;
+  --shadow-game-btn-orange-pressed: inset 0 2px 0 0 #a85f1f, inset 0 -1px 0 0 #a85f1f;
+  --shadow-game-card: inset 0 -8px 0 0 #ee9448;
+  --shadow-game-stat: inset 0 -5px 0 0 #ee9448;
+}
