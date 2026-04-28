@@ -1,6 +1,4 @@
 node_modules
 .DS_Store
-dist/index.html
-dist/assets/index-BRIHWMIj.css
-dist/assets/index-C2lDplE4.js
+dist
 pnpm-lock.yaml

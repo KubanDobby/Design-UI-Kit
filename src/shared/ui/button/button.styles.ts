@@ -22,10 +22,8 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        green:
-          "bg-game-green shadow-game-btn-green active:shadow-game-btn-green-pressed",
-        orange:
-          "bg-game-orange shadow-game-btn-orange active:shadow-game-btn-orange-pressed",
+        green: "bg-game-green shadow-game-btn-green active:shadow-game-btn-green-pressed",
+        orange: "bg-game-orange shadow-game-btn-orange active:shadow-game-btn-orange-pressed",
       },
       size: {
         sm: "px-4 py-1 text-[12px]",
@@ -39,7 +37,7 @@ export const buttonVariants = cva(
       variant: "green",
       size: "md",
     },
-  },
+  }
 );
 
 export type ButtonVariantProps = VariantProps<typeof buttonVariants>;

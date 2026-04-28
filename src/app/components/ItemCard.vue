@@ -37,9 +37,7 @@ const count = ref(1);
     <CardDescription>{{ props.description }}</CardDescription>
     <CardActions>
       <Counter v-model="count" :min="1" />
-      <Button full-width class="flex-1" @click="emit('apply', count)">
-        Apply
-      </Button>
+      <Button full-width class="flex-1" @click="emit('apply', count)"> Apply </Button>
     </CardActions>
   </Card>
 </template>

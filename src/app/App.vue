@@ -17,9 +17,7 @@ import ItemCard from "./components/ItemCard.vue";
       </header>
 
       <section class="flex flex-col gap-3">
-        <p class="font-['Poppins:Bold',sans-serif] text-game-text text-[18px]">
-          Item Cards
-        </p>
+        <p class="font-['Poppins:Bold',sans-serif] text-game-text text-[18px]">Item Cards</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <ItemCard
             title="Scarecrow"
@@ -43,9 +41,7 @@ import ItemCard from "./components/ItemCard.vue";
       </section>
 
       <section class="flex flex-col gap-3">
-        <p class="font-['Poppins:Bold',sans-serif] text-game-text text-[18px]">
-          Stat Displays
-        </p>
+        <p class="font-['Poppins:Bold',sans-serif] text-game-text text-[18px]">Stat Displays</p>
         <div class="flex flex-wrap gap-3">
           <StatDisplay label="ATK" :value="42">
             <Sword :size="20" />
@@ -63,9 +59,7 @@ import ItemCard from "./components/ItemCard.vue";
       </section>
 
       <section class="flex flex-col gap-3">
-        <p class="font-['Poppins:Bold',sans-serif] text-game-text text-[18px]">
-          Buttons
-        </p>
+        <p class="font-['Poppins:Bold',sans-serif] text-game-text text-[18px]">Buttons</p>
         <div class="flex flex-wrap gap-3 items-center">
           <Button size="sm">Small</Button>
           <Button>Apply</Button>

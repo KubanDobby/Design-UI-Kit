@@ -18,11 +18,11 @@ export function useControllableState<T>({
     () => value,
     (next) => {
       controlled.value = next;
-    },
+    }
   );
 
   const current = computed<T>(() =>
-    controlled.value !== undefined ? controlled.value : uncontrolled.value,
+    controlled.value !== undefined ? controlled.value : uncontrolled.value
   );
 
   const setValue = (next: T) => {

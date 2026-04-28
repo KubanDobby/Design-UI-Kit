@@ -5,6 +5,31 @@ import { cn } from "@/shared/lib/cn";
 import { useControllableState } from "@/shared/lib/use-controllable-state";
 import IconButton from "@/shared/ui/icon-button/IconButton.vue";
 
+/**
+ * Counter component
+ * Allows users to increment/decrement a numeric value using buttons
+ * Supports both controlled and uncontrolled patterns
+ * @component
+ *
+ * @prop {number} modelValue - Current value (controlled mode)
+ * @prop {number} defaultValue - Initial value when uncontrolled (default: 0)
+ * @prop {number} min - Minimum allowed value (default: 0)
+ * @prop {number} max - Maximum allowed value (default: 99)
+ * @prop {number} step - Increment/decrement step (default: 1)
+ * @prop {string} class - Additional CSS classes
+ *
+ * @emits update:modelValue - Emitted when value changes in controlled mode
+ * @emits change - Emitted whenever value changes
+ *
+ * @example
+ * // Uncontrolled
+ * <Counter :min="0" :max="10" />
+ *
+ * @example
+ * // Controlled
+ * <Counter v-model="count" :min="0" :max="100" />
+ */
+
 const props = withDefaults(
   defineProps<{
     modelValue?: number;
@@ -20,7 +45,7 @@ const props = withDefaults(
     max: 99,
     step: 1,
     class: undefined,
-  },
+  }
 );
 
 const emit = defineEmits<{
@@ -50,14 +75,7 @@ function inc() {
 </script>
 
 <template>
-  <div
-    :class="
-      cn(
-        'bg-game-orange flex gap-[6px] items-center p-[2px] rounded-game',
-        props.class,
-      )
-    "
-  >
+  <div :class="cn('bg-game-orange flex gap-[6px] items-center p-[2px] rounded-game', props.class)">
     <IconButton ariaLabel="Decrease" :disabled="isAtMin" @click="dec">
       <Minus :size="14" :stroke-width="3" />
     </IconButton>

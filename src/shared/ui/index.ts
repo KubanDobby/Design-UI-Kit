@@ -9,3 +9,8 @@ export { default as CardInfo } from "./card/CardInfo.vue";
 export { default as CardField } from "./card/CardField.vue";
 export { default as CardDescription } from "./card/CardDescription.vue";
 export { default as CardActions } from "./card/CardActions.vue";
+export { default as Input } from "./input/Input.vue";
+export { default as Tooltip } from "./tooltip/Tooltip.vue";
+export { default as Modal } from "./modal/Modal.vue";
+export { default as Select } from "./select/Select.vue";
+export type { SelectOption } from "./select";
