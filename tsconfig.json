@@ -23,7 +23,8 @@
     },
     "types": [
       "vitest/globals"
-    ]
+    ],
+    "ignoreDeprecations": "6.0"
   },
   "include": [
     "src/**/*.ts",
