@@ -1,7 +1,7 @@
 import { nextTick } from "vue";
 import { mount } from "@vue/test-utils";
 import { afterEach, describe, expect, it } from "vitest";
-import Modal from "@/shared/ui/modal/Modal.vue";
+import { Modal } from "@/patterns";
 
 describe("Modal", () => {
   afterEach(() => {

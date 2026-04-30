@@ -1,6 +1,6 @@
 import { mount } from "@vue/test-utils";
 import { describe, expect, it } from "vitest";
-import Select from "@/shared/ui/select/Select.vue";
+import { Select } from "@/patterns";
 
 describe("Select", () => {
   const options = [

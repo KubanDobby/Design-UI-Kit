@@ -3,7 +3,7 @@ import { Minus, Plus } from "lucide-vue-next";
 import { computed } from "vue";
 import { cn } from "@/shared/lib/cn";
 import { useControllableState } from "@/shared/lib/use-controllable-state";
-import IconButton from "@/shared/ui/icon-button/IconButton.vue";
+import IconButton from "@/primitives/icon-button/IconButton.vue";
 
 /**
  * Counter component

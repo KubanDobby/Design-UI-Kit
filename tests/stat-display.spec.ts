@@ -1,6 +1,6 @@
 import { mount } from "@vue/test-utils";
 import { describe, expect, it } from "vitest";
-import StatDisplay from "@/shared/ui/stat-display/StatDisplay.vue";
+import { StatDisplay } from "@/patterns";
 
 describe("StatDisplay", () => {
   it("renders label prop", () => {

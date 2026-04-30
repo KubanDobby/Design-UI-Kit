@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist/lib",
+    "rootDir": "./src",
+    "types": ["vite/client"]
+  },
+  "include": [
+    "src/env.d.ts",
+    "src/index.ts",
+    "src/tokens.ts",
+    "src/business/**/*.ts",
+    "src/patterns/**/*.ts",
+    "src/patterns/**/*.vue",
+    "src/primitives/**/*.ts",
+    "src/primitives/**/*.vue",
+    "src/shared/lib/**/*.ts",
+    "src/tokens/**/*.ts"
+  ],
+  "exclude": ["src/app/**/*", "tests/**/*"]
+}

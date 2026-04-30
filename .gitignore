@@ -2,3 +2,6 @@ node_modules
 .DS_Store
 dist
 pnpm-lock.yaml
+.agents/skills/vue/references/advanced-patterns.md
+.agents/skills/vue/references/core-new-apis.md
+.agents/skills/vue/references/script-setup-macros.md

@@ -10,7 +10,7 @@ import {
   CardPreview,
   CardTitle,
   Counter,
-} from "@/shared/ui";
+} from "@/index";
 
 const props = defineProps<{
   title: string;

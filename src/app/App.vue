@@ -1,7 +1,18 @@
 <script setup lang="ts">
 import { Heart, Shield, Sword, Zap } from "lucide-vue-next";
-import { Button, Counter, StatDisplay } from "@/shared/ui";
+import { Button, Counter, Modal, StatDisplay } from "@/index";
 import ItemCard from "./components/ItemCard.vue";
+import { ref } from "vue";
+
+const isModalOpen = ref(false);
+
+const openModal = () => {
+  isModalOpen.value = true;
+};
+
+const closeModal = () => {
+  isModalOpen.value = false;
+};
 </script>
 
 <template>
@@ -15,6 +26,19 @@ import ItemCard from "./components/ItemCard.vue";
           Reusable Vue 3 components extracted from the Scarecrow design.
         </p>
       </header>
+
+      <Modal title="Example Modal" v-model="isModalOpen" :closeable="true">
+        <p class="text-game-text text-[16px] leading-[24px]">
+          This is an example modal. You can put any content here, such as
+          instructions, item details, or character information.
+        </p>
+        <div class="mt-4 flex justify-end gap-2">
+          <Button variant="orange" @click="closeModal">Close</Button>
+          <Button @click="closeModal">Save</Button>
+        </div>
+      </Modal>
+
+      <Button @click="openModal">Open Modal</Button>
 
       <section class="flex flex-col gap-3">
         <p class="font-['Poppins:Bold',sans-serif] text-game-text text-[18px]">Item Cards</p>

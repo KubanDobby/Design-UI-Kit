@@ -1,6 +1,6 @@
 import { mount } from "@vue/test-utils";
 import { describe, expect, it } from "vitest";
-import Counter from "@/shared/ui/counter/Counter.vue";
+import { Counter } from "@/patterns";
 
 describe("Counter", () => {
   it("updates internal state when uncontrolled", async () => {

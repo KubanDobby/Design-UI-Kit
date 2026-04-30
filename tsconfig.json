@@ -17,5 +17,5 @@
     },
     "types": ["vitest/globals"]
   },
-  "include": ["src/**/*.ts", "src/**/*.vue", "src/**/*.d.ts", "tests/**/*.ts"]
+  "include": ["src/**/*.ts", "src/**/*.vue", "src/**/*.d.ts", "src/**/*.css", "tests/**/*.ts"]
 }

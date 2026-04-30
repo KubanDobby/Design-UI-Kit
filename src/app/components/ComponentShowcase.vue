@@ -9,7 +9,7 @@ import {
   Select,
   Tooltip,
   Modal,
-} from "@/shared/ui";
+} from "@/index";
 import { Heart, Settings, Plus, Minus } from "lucide-vue-next";
 
 /**

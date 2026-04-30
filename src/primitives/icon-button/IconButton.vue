@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Button from "@/shared/ui/button/Button.vue";
+import Button from "../button/Button.vue";
 
 /**
  * IconButton component

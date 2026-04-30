@@ -1,6 +1,6 @@
 import { mount } from "@vue/test-utils";
 import { describe, expect, it } from "vitest";
-import Button from "@/shared/ui/button/Button.vue";
+import { Button } from "@/primitives";
 
 describe("Button", () => {
   it("renders button with default variant and size", () => {
